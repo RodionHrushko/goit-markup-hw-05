@@ -602,6 +602,14 @@ border-radius: 4px;
 
 }
 
+.modal-clous-btn:focus{
+    fill: #ffffff
+}
+
+.modal-clous-btn:hover{
+    fill: #ffffff
+}
+
 .modal-clous-svg{
    
 }
