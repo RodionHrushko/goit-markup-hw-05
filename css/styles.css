@@ -728,7 +728,7 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
-border: 1px solid rgba(46, 47, 66, 0.4)
+border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 background-color: transparent;
 padding: 8px 16px;
@@ -773,4 +773,20 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .chek-lebel-link{
     color: #4d5ae5;
+}
+
+.label-svg{
+    fill: transparent;
+        pointer-events: none;
+}
+
+input:checked+.chek-lebel .chek-lebel-span {
+    background-color: var(--accent-bg);
+    /* #404bbf */
+    border: none;
+}
+
+input:checked+.chek-lebel .chek-lebel-span .label-svg {
+    fill: var(--icon-fill);
+    /* #f4f4fd */
 }
