@@ -603,11 +603,13 @@ border-radius: 4px;
 }
 
 .modal-clous-btn:focus{
-    fill: #ffffff
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-clous-btn:hover{
-    fill: #ffffff
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-clous-svg{
@@ -627,7 +629,7 @@ border-radius: 4px;
 }
 
 .blackdrop-text{
-    margin-top: 72px;
+    
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
