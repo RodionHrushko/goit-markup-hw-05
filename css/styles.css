@@ -555,19 +555,11 @@ font-weight: 400;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top:0;
+  
 }
 
-.blackdrop .is-open{
-opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+
 
 .modal{ 
 border-radius: 4px;
@@ -579,13 +571,23 @@ border-radius: 4px;
     left: 50%;
    transform: translate( -50%, -50%);
    padding: 0 24px;
-   transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .modal-clous-btn{
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+
+}
+
+.modal-clous-svg{
    
 }
 .modal-field{
