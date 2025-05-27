@@ -650,7 +650,7 @@ border-radius: 4px;
         
 }
 
-.modal-imput:name="user-name"{
+.modal-imput{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
