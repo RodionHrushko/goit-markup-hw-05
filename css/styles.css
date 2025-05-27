@@ -714,6 +714,10 @@ border-radius: 4px;
     background-color: #4d5ae5;
 }
 
+.modal-text-are{
+    margin-bottom: 16px
+}
+
 .modal-text-area{
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
@@ -726,7 +730,40 @@ border-radius: 4px;
         resize: none;
         font-weight: 400;
             font-size: 12px;
-            line-height: 1.16667;
+            line-height: 1.17;
             letter-spacing: 0.04em;
             color: rgba(46, 47, 66, 0.4);
+            background-color: transparent;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+..modal-text-area:focus{
+    border-color: #4D5AE5;
+}
+
+.modal-chek{
+    margin-bottom: 24px;
+}
+
+.chek-imput{
+    
+}
+
+.chek-lebel{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
+}
+
+.chek-lebel-span{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
