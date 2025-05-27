@@ -788,5 +788,61 @@ input:checked+.chek-lebel .chek-lebel-span {
 
 input:checked+.chek-lebel .chek-lebel-span .label-svg {
     fill: var(--icon-fill);
-    fill:#F4F4FD;
+    
+}
+
+:root {
+    --accent-bg: #404bbf;
+    --icon-fill: #F4F4FD;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.chek-lebel {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.chek-lebel-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.chek-lebel-link {
+    color: #4d5ae5;
+}
+
+.label-svg {
+    fill: transparent;
+    pointer-events: none;
+}
+
+input:checked+.chek-lebel .chek-lebel-span {
+    background-color: var(--accent-bg);
+    border: none;
+}
+
+input:checked+.chek-lebel .chek-lebel-span .label-svg {
+    fill: var(--icon-fill);
 }
