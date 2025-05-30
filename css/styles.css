@@ -728,13 +728,12 @@ border-radius: 4px;
     margin-top: 24px;
 }
 
-.modal-button:hover{
-    border-color: #404BBF;
+.modal-button:hover,
+.modal-button:focus{
+    background-color: #404BBF;
 }
 
-.modal-button:focus{
-    border-color: #404BBF;
-}
+
 
 
 
@@ -832,17 +831,20 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.btn-submit:hover{
-    border-color: #404bbf;
+.btn-submit:focus {
+    background-color: #404BBF;
 }
 
-.btn-submit:focus {
-    background-color: #404BBF;   }
+.btn-icon {}
 
-.btn-icon {
+.btn-submit:hover{
+    background-color: #404bbf;
+}
+
+
     
 
-}
+
 
 .modal-chek-text{
     font-weight: 400;
