@@ -873,13 +873,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #4d5ae5;
 }
 
-input:checked+label .span-chek {
-    background-color: #404bbf;
-    fill: #F4F4FD;
-    border: none; }
+:root {
+    --bg-checked-color: #404bbf;
+    --fill-checked-color: #F4F4FD;
+}
 
-    
-.span-chek{
+.span-chek {
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -890,9 +889,13 @@ input:checked+label .span-chek {
     justify-content: center;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    fill: transparent;
 }
+
+/* Коли чекбокс увімкнено (checked), стилі для span */
+input[type="checkbox"]:checked+label .span-chek {
+    background-color: var(--bg-checked-color);
+    border: none;
+    fill: var(--fill-checked-color); }
 
 .chek-svg{
   
