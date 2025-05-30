@@ -557,6 +557,16 @@ font-weight: 400;
     position: fixed;
     top:0;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+opacity:0;
+visibility:hidden;
+pointers-events:none;
+}
+
+.is-open{
+    opacity: 1;
+        visibility: visible;
+        pointers-events: auto;
 }
 
 
@@ -751,57 +761,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --link-color: #4d5ae5;
 }
 
-.modal-chek {
-    margin-bottom: 24px;
-}
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.chek-lebel {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--text-secondary-color);
-}
-
-.chek-lebel-span {
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-}
-
-.label-svg {
-    fill: transparent;
-    pointer-events: none;
-}
-
-.chek-lebel-link {
-    color: var(--link-color);
-}
-
-#user-privacy:checked+.chek-lebel .chek-lebel-span {
-    background-color: var(--accent-color);
-    border: none;
-    fill: var(--icon-checked-color);
-}
 
 .subscribe-container{
     margin-left: 80px;
@@ -863,4 +823,42 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .btn-icon {
     margin-left: 16px;
 
+}
+
+.modal-chek-text{
+    font-weight: 400;
+        font-size: 12px;
+    display: flex;
+        line-height: 14px;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        a{
+            text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: #4d5ae5;
+        }
+}
+
+.visually:checked + .modal-chek-text span{
+background-color: #404bbf;
+fill: #f4f4fd;
+}
+
+span{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+}
+
+.chek-svg{
+    width: 10px;
+    height: 8px;
 }
