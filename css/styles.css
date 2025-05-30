@@ -873,10 +873,18 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #4d5ae5;
 }
 
-:root {
-    --bg-checked-color: #404bbf;
-        --fill-checked-color: #F4F4FD;
+input:checked+label .span-chek {
+    background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none; }
+
+
+.span-chek+label{
+    background-color: #404bbf;
+        fill: #F4F4FD;
+        border: none
 }
+
 
 .span-chek {
     width: 16px;
@@ -884,19 +892,14 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: inline-flex;
+    fill: transparent;
 }
-
-
-input[type="checkbox"]:checked+label .span-chek {
-    background-color: var(--bg-checked-color);
-    border: none;
-    fill: var(--fill-checked-color); }
 
 .chek-svg{
   
