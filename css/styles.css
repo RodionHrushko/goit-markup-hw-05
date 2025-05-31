@@ -855,7 +855,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     font-weight: 400;
         font-size: 12px;
-    display: flex;
+    
     line-height: 1.17;
         align-items: center;
         letter-spacing: 0.04em;
@@ -866,7 +866,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .chek-link{
     font-weight: 400;
         font-size: 12px;
-        display: flex;
+        
         line-height: 1.17;
         align-items: center;
         letter-spacing: 0.04em;
@@ -877,8 +877,10 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 input:checked+label .span-chek {
     background-color: #404bbf;
+    fill: #404bbf;
+    border: none;
     fill: #F4F4FD;
-    border: none; }
+}
 
 
 
@@ -887,7 +889,7 @@ input:checked+label .span-chek {
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4) rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     justify-content: center;
     align-items: center;
